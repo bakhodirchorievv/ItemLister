@@ -15,8 +15,6 @@ body {
     margin: 0 auto;
 }
 .header {
-    background-color: #1c8d41;
-    color: #f0f0f0;
     padding: 30px 0;
 }
 .main__wrapper {
@@ -84,5 +82,5 @@ body {
     justify-content: center;
     border-radius: 2px;
     padding-bottom: 3px;
-    /* color: white; */
+    color: white;
 }

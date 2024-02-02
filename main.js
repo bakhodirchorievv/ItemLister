@@ -1,6 +1,10 @@
 const input = document.querySelector("#item-input") 
 const submitBtn = document.querySelector("#submit-btn") 
 const itemList = document.querySelector("#items") 
+const header = document.querySelector(".header")
+
+header.style.backgroundColor = "#1c8d41"
+header.style.color = "#f0f0f0"
 
 let thingsToDo = JSON.parse(localStorage.getItem("thingsToDo")) || []
 

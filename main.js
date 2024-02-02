@@ -16,6 +16,8 @@ function addData () {
     itemList.innerHTML = ""
 
     thingsToDo.forEach(data => {
+    if (data.value) {
+
         itemList.style.display = "block" 
         const newItem = document.createElement("li") 
         newItem.textContent = data.value 
@@ -36,10 +38,13 @@ function addData () {
             }
             updateLocalStorage()
         }) 
-    });
+    }
+    
+    })
 
 }
 
+    
 submitBtn.addEventListener("click", (event)=> {
     event.preventDefault()
     thingsToDo.push({

@@ -3,51 +3,42 @@
     padding: 0;
     box-sizing: border-box;
 }
-
 body {
     font-family: "Roboto", sans-serif;
     font-size: 1.2em;
     background-color: #f0f0f0;
     color: #333;
 }
-
 .wrapper {
     max-width: 1024px;
     width: calc(100vw - 120px);
     margin: 0 auto;
 }
-
 .header {
     background-color: #1c8d41;
     color: #f0f0f0;
     padding: 30px 0;
 }
-
 .main__wrapper {
     padding: 30px 0;
 }
-
 .item-lister {
     border: 2px solid #aaa;
     border-radius: 4px;
     padding: 16px;
 }
-
 .item-lister__title {
     margin-bottom: 5px;
 }
-
 .item-lister__form {
     margin-bottom: 10px;
 }
-
 .form__input {
     border: 2px solid #aaa;
     border-radius: 4px;
     padding: 5px;
     font-size: 1.2em;
 }
-
 .btn {
     padding: 5px 15px;
     background-color: #333;
@@ -57,18 +48,9 @@ body {
     border-radius: 4px;
     cursor: pointer;
 }
-
 .btn:active {
     scale: 0.95;
 }
-
-.delete-btn {
-    float: right;
-    font-size: 14px;
-    background-color: crimson;
-    border: none;
-}
-
 .list-group {
     list-style: none;
     font-size: 1.2em;
@@ -77,7 +59,6 @@ body {
     border-radius: 4px;
     display: none;
 }
-
 .list-group-item {
     border-bottom: 2px solid #aaa;
     border-top: none;
@@ -90,7 +71,6 @@ body {
     background-color: #1c8d41;
     color: #f0f0f0;
 }
-
 .list-group-item:last-child {
     border-bottom: none;
 }
@@ -104,5 +84,5 @@ body {
     justify-content: center;
     border-radius: 2px;
     padding-bottom: 3px;
-    color: white;
+    /* color: white; */
 }

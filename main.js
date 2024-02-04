@@ -2,6 +2,7 @@ const input = document.querySelector("#item-input")
 const submitBtn = document.querySelector("#submit-btn") 
 const itemList = document.querySelector("#items") 
 const header = document.querySelector(".header")
+const searchIput = document.querySelector(".search-input")
 
 header.style.backgroundColor = "#1c8d41"
 header.style.color = "#f0f0f0"
@@ -12,10 +13,17 @@ function updateLocalStorage () {
     localStorage.setItem("thingsToDo", JSON.stringify(thingsToDo))
 }
 
-function addData () {
+searchIput.addEventListener("input", ()=> {
+    let filteredItems = thingsToDo.filter(data => data.value.toLowerCase().includes(searchIput.value.toLowerCase()))
+    addData(filteredItems)
+})
+
+function addData (filteredItems) {
     itemList.innerHTML = ""
 
-    thingsToDo.forEach(data => {
+    let itemsForList = filteredItems || thingsToDo
+
+    itemsForList.forEach(data => {
     if (data.value) {
 
         itemList.style.display = "block" 
